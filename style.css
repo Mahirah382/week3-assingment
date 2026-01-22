@@ -1,5 +1,6 @@
 * {
-    margin: 1%;
+    box-sizing: border-box;
+    margin: 0;
     background-color: beige;
     padding: 0;
 }
@@ -7,9 +8,43 @@
 Img {
     height: 50vh;
     width: auto;
-
 }
 
 h1 {
     color: #8B4513;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1 ;
+    text-align: center;
 }
+
+
+
+#shop {
+    /*display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;*/
+    display: grid;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.score {
+    display: grid;
+    
+}
+
