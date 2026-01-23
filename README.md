@@ -31,3 +31,9 @@
  - sound effects
  - visual effects when clicking
  - mobile-friendly layout
+
+ # assignment reflection
+
+ - I think I met all the requirements, this time I started getting the hang of loops and arrays.
+ - This time I did find the styling part quite hard, I tried using grid but I got too confused.
+ - I used youtube tutorials to figure out how to animate the image.
