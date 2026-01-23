@@ -1,50 +1,84 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    background-color: beige;
-    padding: 0;
 }
 
-Img {
-    height: 50vh;
-    width: auto;
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  background: #f2e2c4;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 h1 {
     color: #8B4513;
     display: flex;
-    justify-content: center;
-    grid-column: 1/-1 ;
+    margin: 20px 0;
     text-align: center;
+    justify-content: center;
+}
+.score {
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 0 #c9b089;
+  background-color: #fff6e5;;
 }
 
-
+#reset {
+    cursor: pointer;
+    padding: 10px 20px;
+}
 
 #shop {
-    /*display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;*/
-    display: grid;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-
+    flex: 1;
+    position: relative;
+    width: 300px;
+    right:25px;
 }
 
-.game {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 1fr;
+#shop div {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 0 #aaa;
+  display: flex;
+  justify-content: space-around;
+}
+
+#shop button {
+  width: 50px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .left {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
-
-.score {
-    display: grid;
-    
-}
-

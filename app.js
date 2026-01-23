@@ -4,6 +4,7 @@ let cps = 1;
 const countDisplay = document.getElementById('count');
 const cpsDisplay = document.getElementById('cps');
 const image = document.querySelector('img');
+const resetBtn = document.getElementById('reset');
 
 loadGame();
 
@@ -90,3 +91,9 @@ function loadGame () {
     }
 }
 
+resetBtn.addEventListener('click', function() {
+    count = 0;
+    cps = 1;
+    countDisplay.innerText = count;
+    cpsDisplay.innerText = cps; 
+})
